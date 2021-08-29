@@ -9,6 +9,7 @@
     Supported breakpoints:
     <ul>
         <li>Java: line, field, method breakpoints</li>
+        <li>Kotlin: line, field, function breakpoints</li>
         <li>Scala: line breakpoints</li>
         <li>Python: line breakpoint</li>
     </ul>
