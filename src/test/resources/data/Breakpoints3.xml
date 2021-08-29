@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<exported-breakpoints>
+  <commitID>adb32d8b80ef5b24c7e286db39c151cbffb168c2</commitID>
+  <branchName>master</branchName>
+  <breakpoints>
+    <list>
+      <exported-default-breakpoint properties-canonical-name="" type-canonical-name="com.jetbrains.python.debugger.PyLineBreakpointType" state-canonical-name="com.intellij.xdebugger.impl.breakpoints.LineBreakpointState" type-id="python-line" breakpoint-canonical-name="com.intellij.xdebugger.impl.breakpoints.XLineBreakpointImpl">
+        <metadata>
+          <option name="line" value="1" />
+          <option name="relativeUrl" value="Test.py" />
+          <option name="tags">
+            <list />
+          </option>
+          <option name="url" value="file://C:/Users/Marcin/PycharmProjects/flask-sql-injection-sample/Test.py" />
+        </metadata>
+        <state enabled="true" log-message="false" log-stack="false" suspend="THREAD" type="python-line">
+          <option name="description" />
+          <url>file://C:/Users/Marcin/PycharmProjects/flask-sql-injection-sample/Test.py</url>
+          <option name="group" />
+          <line>1</line>
+          <option name="temporary" value="false" />
+          <option name="timeStamp" value="1" />
+        </state>
+      </exported-default-breakpoint>
+    </list>
+  </breakpoints>
+</exported-breakpoints>
+

@@ -1,0 +1,5 @@
+<idea-plugin>
+    <extensions defaultExtensionNs="com.intellij">
+        <postStartupActivity implementation="com.bukowiecki.breakpoints.service.kotlin.KotlinDependencyLoader"/>
+    </extensions>
+</idea-plugin>

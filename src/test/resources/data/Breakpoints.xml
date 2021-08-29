@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<exported-breakpoints>
+  <commitID />
+  <breakpoints>
+    <list>
+      <exported-default-breakpoint properties-canonical-name="" type-canonical-name="com.jetbrains.python.debugger.PyLineBreakpointType" state-canonical-name="com.intellij.xdebugger.impl.breakpoints.LineBreakpointState" type-id="python-line" breakpoint-canonical-name="com.intellij.xdebugger.impl.breakpoints.XLineBreakpointImpl">
+        <metadata>
+          <option name="line" value="1" />
+          <option name="relativeUrl" value="Test.py" />
+          <option name="tags">
+            <list />
+          </option>
+          <option name="url" value="file://C:/Users/Marcin/IdeaProjects/bmanager/Test.py" />
+        </metadata>
+        <state enabled="true" log-message="false" log-stack="false" suspend="THREAD" type="python-line">
+          <option name="description" />
+          <url>file://C:/Users/Marcin/IdeaProjects/bmanager/Test.py</url>
+          <option name="group" />
+          <line>1</line>
+          <option name="temporary" value="false" />
+          <option name="timeStamp" value="1" />
+        </state>
+      </exported-default-breakpoint>
+    </list>
+  </breakpoints>
+</exported-breakpoints>
+

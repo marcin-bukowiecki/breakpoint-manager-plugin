@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<exported-breakpoints>
+  <commitID>40910804189e3654caac1aa91dfcb1ccf2d4baf6</commitID>
+  <branchName>master</branchName>
+  <breakpoints>
+    <list>
+      <exported-default-breakpoint properties-canonical-name="" type-canonical-name="com.jetbrains.python.debugger.PyLineBreakpointType" state-canonical-name="com.intellij.xdebugger.impl.breakpoints.LineBreakpointState" type-id="python-line" breakpoint-canonical-name="com.intellij.xdebugger.impl.breakpoints.XLineBreakpointImpl">
+        <metadata>
+          <option name="line" value="1" />
+          <option name="relativeUrl" value="src/test/Foo.py" />
+          <option name="tags">
+            <list />
+          </option>
+          <option name="url" value="file://C:/Users/Marcin/IdeaProjects/bmanager/src/test/Foo.py" />
+        </metadata>
+        <state enabled="true" log-message="false" log-stack="false" suspend="THREAD" type="python-line">
+          <option name="description" />
+          <url>file://C:/Users/Marcin/IdeaProjects/bmanager/src/test/Foo.py</url>
+          <option name="group" />
+          <line>1</line>
+          <option name="temporary" value="false" />
+          <option name="timeStamp" value="11" />
+        </state>
+      </exported-default-breakpoint>
+      <exported-default-breakpoint properties-canonical-name="" type-canonical-name="com.jetbrains.python.debugger.PyLineBreakpointType" state-canonical-name="com.intellij.xdebugger.impl.breakpoints.LineBreakpointState" type-id="python-line" breakpoint-canonical-name="com.intellij.xdebugger.impl.breakpoints.XLineBreakpointImpl">
+        <metadata>
+          <option name="line" value="1" />
+          <option name="relativeUrl" value="Test.py" />
+          <option name="tags">
+            <list />
+          </option>
+          <option name="url" value="file://C:/Users/Marcin/IdeaProjects/bmanager/Test.py" />
+        </metadata>
+        <state enabled="true" log-message="false" log-stack="false" suspend="THREAD" type="python-line">
+          <option name="description" />
+          <url>file://C:/Users/Marcin/IdeaProjects/bmanager/Test.py</url>
+          <option name="group" />
+          <line>1</line>
+          <option name="temporary" value="false" />
+          <option name="timeStamp" value="7" />
+        </state>
+      </exported-default-breakpoint>
+      <exported-default-breakpoint properties-canonical-name="org.jetbrains.java.debugger.breakpoints.properties.JavaFieldBreakpointProperties" type-canonical-name="com.intellij.debugger.ui.breakpoints.JavaFieldBreakpointType" state-canonical-name="com.intellij.xdebugger.impl.breakpoints.LineBreakpointState" type-id="java-field" breakpoint-canonical-name="com.intellij.xdebugger.impl.breakpoints.XLineBreakpointImpl">
+        <metadata>
+          <option name="line" value="4" />
+          <option name="relativeUrl" value="src/foo/bar/Main.java" />
+          <option name="tags">
+            <list />
+          </option>
+          <option name="url" value="file://C:/Users/Marcin/IdeaProjects/bmanager/src/foo/bar/Main.java" />
+        </metadata>
+        <properties field="a" class="foo.bar.Main">
+          <option name="caller-filters-enabled" value="false" />
+          <option name="class-filters-enabled" value="false" />
+          <option name="count-filter" value="0" />
+          <option name="count-filter-enabled" value="false" />
+          <option name="instance-filters-enabled" value="false" />
+          <option name="tracing-end" value="false" />
+          <option name="tracing-start" value="false" />
+          <caller-exclusion-filters />
+          <caller-filters />
+          <class-exclusion-filters />
+          <class-filters />
+          <instance-filters />
+          <option name="WATCH_MODIFICATION" value="true" />
+          <option name="WATCH_ACCESS" value="false" />
+        </properties>
+        <state enabled="true" log-message="false" log-stack="false" suspend="ALL" type="java-field">
+          <option name="description" />
+          <url>file://C:/Users/Marcin/IdeaProjects/bmanager/src/foo/bar/Main.java</url>
+          <option name="group" />
+          <line>4</line>
+          <properties field="a" class="foo.bar.Main" />
+          <option name="temporary" value="false" />
+          <option name="timeStamp" value="15" />
+        </state>
+      </exported-default-breakpoint>
+      <exported-default-breakpoint properties-canonical-name="org.jetbrains.java.debugger.breakpoints.properties.JavaMethodBreakpointProperties" type-canonical-name="com.intellij.debugger.ui.breakpoints.JavaMethodBreakpointType" state-canonical-name="com.intellij.xdebugger.impl.breakpoints.LineBreakpointState" type-id="java-method" breakpoint-canonical-name="com.intellij.xdebugger.impl.breakpoints.XLineBreakpointImpl">
+        <metadata>
+          <option name="line" value="6" />
+          <option name="relativeUrl" value="src/foo/bar/Main.java" />
+          <option name="tags">
+            <list />
+          </option>
+          <option name="url" value="file://C:/Users/Marcin/IdeaProjects/bmanager/src/foo/bar/Main.java" />
+        </metadata>
+        <properties class="foo.bar.Main" method="main">
+          <option name="caller-filters-enabled" value="false" />
+          <option name="class-filters-enabled" value="false" />
+          <option name="count-filter" value="0" />
+          <option name="count-filter-enabled" value="false" />
+          <option name="instance-filters-enabled" value="false" />
+          <option name="tracing-end" value="false" />
+          <option name="tracing-start" value="false" />
+          <caller-exclusion-filters />
+          <caller-filters />
+          <class-exclusion-filters />
+          <class-filters />
+          <instance-filters />
+          <option name="EMULATED" value="true" />
+          <option name="WATCH_ENTRY" value="true" />
+          <option name="WATCH_EXIT" value="true" />
+        </properties>
+        <state enabled="true" log-message="false" log-stack="false" suspend="ALL" type="java-method">
+          <option name="description" />
+          <url>file://C:/Users/Marcin/IdeaProjects/bmanager/src/foo/bar/Main.java</url>
+          <option name="group" />
+          <line>6</line>
+          <properties class="foo.bar.Main" method="main">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="temporary" value="false" />
+          <option name="timeStamp" value="14" />
+        </state>
+      </exported-default-breakpoint>
+      <exported-default-breakpoint properties-canonical-name="org.jetbrains.java.debugger.breakpoints.properties.JavaLineBreakpointProperties" type-canonical-name="com.intellij.debugger.ui.breakpoints.JavaLineBreakpointType" state-canonical-name="com.intellij.xdebugger.impl.breakpoints.LineBreakpointState" type-id="java-line" breakpoint-canonical-name="com.intellij.xdebugger.impl.breakpoints.XLineBreakpointImpl">
+        <metadata>
+          <option name="line" value="3" />
+          <option name="relativeUrl" value="src/Main.java" />
+          <option name="tags">
+            <list />
+          </option>
+          <option name="url" value="file://C:/Users/Marcin/IdeaProjects/bmanager/src/Main.java" />
+        </metadata>
+        <properties>
+          <option name="caller-filters-enabled" value="false" />
+          <option name="class-filters-enabled" value="false" />
+          <option name="count-filter" value="0" />
+          <option name="count-filter-enabled" value="false" />
+          <option name="instance-filters-enabled" value="false" />
+          <option name="tracing-end" value="false" />
+          <option name="tracing-start" value="false" />
+          <caller-exclusion-filters />
+          <caller-filters />
+          <class-exclusion-filters />
+          <class-filters />
+          <instance-filters />
+          <option name="lambda-ordinal" />
+        </properties>
+        <state enabled="true" log-message="false" log-stack="false" suspend="ALL" type="java-line">
+          <option name="description" />
+          <url>file://C:/Users/Marcin/IdeaProjects/bmanager/src/Main.java</url>
+          <option name="group" />
+          <line>3</line>
+          <option name="temporary" value="false" />
+          <option name="timeStamp" value="13" />
+        </state>
+      </exported-default-breakpoint>
+      <exported-default-breakpoint properties-canonical-name="org.jetbrains.java.debugger.breakpoints.properties.JavaLineBreakpointProperties" type-canonical-name="org.jetbrains.plugins.scala.debugger.breakpoints.ScalaLineBreakpointType" state-canonical-name="com.intellij.xdebugger.impl.breakpoints.LineBreakpointState" type-id="scala-line" breakpoint-canonical-name="com.intellij.xdebugger.impl.breakpoints.XLineBreakpointImpl">
+        <metadata>
+          <option name="line" value="5" />
+          <option name="relativeUrl" value="src/foo/bar/Test.scala" />
+          <option name="tags">
+            <list />
+          </option>
+          <option name="url" value="file://C:/Users/Marcin/IdeaProjects/bmanager/src/foo/bar/Test.scala" />
+        </metadata>
+        <properties>
+          <option name="caller-filters-enabled" value="false" />
+          <option name="class-filters-enabled" value="false" />
+          <option name="count-filter" value="0" />
+          <option name="count-filter-enabled" value="false" />
+          <option name="instance-filters-enabled" value="false" />
+          <option name="tracing-end" value="false" />
+          <option name="tracing-start" value="false" />
+          <caller-exclusion-filters />
+          <caller-filters />
+          <class-exclusion-filters />
+          <class-filters />
+          <instance-filters />
+          <option name="lambda-ordinal" />
+        </properties>
+        <state enabled="true" log-message="false" log-stack="false" suspend="ALL" type="scala-line">
+          <option name="description" />
+          <url>file://C:/Users/Marcin/IdeaProjects/bmanager/src/foo/bar/Test.scala</url>
+          <option name="group" />
+          <line>5</line>
+          <option name="temporary" value="false" />
+          <option name="timeStamp" value="10" />
+        </state>
+      </exported-default-breakpoint>
+    </list>
+  </breakpoints>
+</exported-breakpoints>
+

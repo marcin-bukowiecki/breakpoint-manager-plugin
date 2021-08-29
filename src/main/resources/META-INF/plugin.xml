@@ -1,0 +1,100 @@
+<idea-plugin>
+    <id>com.bukowiecki.breakpoint.manager</id>
+    <name>Breakpoint Manager</name>
+    <vendor email="m.bukowiecki0407@gmail.com" url="https://github.com/marcin-bukowiecki">Marcin Bukowiecki</vendor>
+
+    <description><![CDATA[
+    Breakpoint Manager provides support to import/export breakpoints and manage your breakpoints using tags.
+
+    Supported breakpoints:
+    <ul>
+        <li>Java: line, field, method breakpoints</li>
+        <li>Scala: line breakpoints</li>
+        <li>Python: line breakpoint</li>
+    </ul>
+
+    Breakpoints are exported to a xml file. You can do it by right-clicking in the supported language editor source file (e.g. java file)
+    and select Open Breakpoint Manager action or Export Breakpoints action.
+
+    Plugin doesn't require any configuration.
+
+    For more details please visit: <a href="https://github.com/marcin-bukowiecki/breakpoint-manager-plugin">Breakpoint Manager</a>
+
+    ]]></description>
+
+    <!-- please see https://plugins.jetbrains.com/docs/intellij/plugin-compatibility.html
+         on how to target different products -->
+    <depends>com.intellij.modules.platform</depends>
+    <depends>Git4Idea</depends>
+
+    <depends optional="true" config-file="com.bukowiecki.breakpoints-withPythonId.xml">Pythonid</depends>
+    <depends optional="true" config-file="com.bukowiecki.breakpoints-withJava.xml">com.intellij.java</depends>
+    <depends optional="true" config-file="com.bukowiecki.breakpoints-withScala.xml">org.intellij.scala</depends>
+    <depends optional="true" config-file="com.bukowiecki.breakpoints-withKotlin.xml">org.jetbrains.kotlin</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <!-- Add your extensions here -->
+        <postStartupActivity implementation="com.bukowiecki.breakpoints.listeners.ProjectOpened"/>
+        <postStartupActivity implementation="com.bukowiecki.breakpoints.service.python.PythonDependencyLoader"/>
+        <projectService serviceImplementation="com.bukowiecki.breakpoints.tagging.TagsProperties"/>
+        <projectService serviceImplementation="com.bukowiecki.breakpoints.service.BreakpointManagerService"/>
+        <projectService serviceImplementation="com.bukowiecki.breakpoints.service.ImportableBreakpointFactory"/>
+    </extensions>
+
+    <actions>
+        <action id="Bukowiecki.BreakpointManager.ExportBreakpoints"
+                class="com.bukowiecki.breakpoints.actions.ExportBreakpointsAction"
+                icon="AllIcons.ToolbarDecorator.Export"
+                text="Export Breakpoints">
+            <add-to-group anchor="last" group-id="EditorPopupMenu"/>
+        </action>
+        <action id="Bukowiecki.BreakpointManager.ImportBreakpoints"
+                class="com.bukowiecki.breakpoints.actions.ImportBreakpointsAction"
+                icon="AllIcons.ToolbarDecorator.Import"
+                text="Import Breakpoints">
+            <add-to-group anchor="last" group-id="EditorPopupMenu"/>
+        </action>
+        <action id="Bukowiecki.BreakpointManager.AddTag"
+                class="com.bukowiecki.breakpoints.actions.ManageTagsAction"
+                icon="AllIcons.Debugger.Frame"
+                text="Manage Tags">
+            <add-to-group anchor="last" group-id="EditorPopupMenu"/>
+        </action>
+        <action id="Bukowiecki.BreakpointManager.DisableTags"
+                class="com.bukowiecki.breakpoints.actions.DisableTagsAction"
+                icon="AllIcons.Diff.GutterCheckBox"
+                text="Disable Tags">
+            <add-to-group anchor="last" group-id="EditorPopupMenu"/>
+        </action>
+        <action id="Bukowiecki.BreakpointManager.EnableTags"
+                class="com.bukowiecki.breakpoints.actions.EnableTagsAction"
+                icon="AllIcons.Diff.GutterCheckBoxSelected"
+                text="Enable Tags">
+            <add-to-group anchor="last" group-id="EditorPopupMenu"/>
+        </action>
+        <action id="Bukowiecki.BreakpointManager.OpenBreakpointManager"
+                class="com.bukowiecki.breakpoints.actions.OpenBreakpointManagerAction"
+                icon="AllIcons.Debugger.ViewBreakpoints"
+                text="Open Breakpoint Manager">
+            <add-to-group anchor="last" group-id="EditorPopupMenu"/>
+        </action>
+        <action id="Bukowiecki.BreakpointManager.RefreshTags"
+                class="com.bukowiecki.breakpoints.actions.RefreshTagsAction"
+                icon="AllIcons.Actions.ForceRefresh"
+                text="Refresh Tags">
+            <add-to-group anchor="last" group-id="EditorPopupMenu"/>
+        </action>
+
+        <group id="Bukowiecki.BreakpointManager.TagsTable"
+               description="Breakpoint Tags table actions"
+               text="Breakpoint Tags Table Actions"
+               popup="true">
+        </group>
+
+        <group id="Bukowiecki.BreakpointManager.Tree"
+               description="Breakpoint Tree actions"
+               text="Breakpoint Tree Actions"
+               popup="true">
+        </group>
+    </actions>
+</idea-plugin>

@@ -1,0 +1,37 @@
+plugins {
+    id 'java'
+    id 'org.jetbrains.intellij' version '1.1.2'
+    id 'org.jetbrains.kotlin.jvm' version '1.5.21'
+}
+
+group 'com.bukowiecki.breakpoint.manager'
+version '1.2.3'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.jetbrains.kotlin:kotlin-stdlib:1.5.21'
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.2'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.2'
+}
+
+// See https://github.com/JetBrains/gradle-intellij-plugin/
+intellij {
+    version = '2021.2.1'
+    type = 'IU'
+    plugins = [
+            'java',
+            'Pythonid:212.4746.96',
+            'Git4Idea',
+            'org.intellij.scala:2021.2.15',
+            'org.jetbrains.kotlin:212-1.5.30-release-409-IJ4638.7'
+    ]
+}
+
+patchPluginXml {
+    changeNotes = project.file('change-notes.html').text
+}
+
+sourceSets.main.java.srcDirs = ['src/main/java', 'src/main/gen']
