@@ -212,8 +212,6 @@ class BreakpointManagerDialog(private val myProject: Project) : BaseBreakpointsD
         myTreeController.rebuildTree(myBreakpointItems)
         myTreeController.uncheckAll()
         expandGroups(myTree, myTree.rowCount)
-        panel.add(myTree)
-
         return panel
     }
 

@@ -5,7 +5,7 @@ plugins {
 }
 
 group 'com.bukowiecki.breakpoint.manager'
-version '1.2.3'
+version '1.2.4'
 
 repositories {
     mavenCentral()
@@ -19,7 +19,7 @@ dependencies {
 
 // See https://github.com/JetBrains/gradle-intellij-plugin/
 intellij {
-    version = '2021.2.1'
+    version = '2021.2.2'
     type = 'IU'
     plugins = [
             'java',

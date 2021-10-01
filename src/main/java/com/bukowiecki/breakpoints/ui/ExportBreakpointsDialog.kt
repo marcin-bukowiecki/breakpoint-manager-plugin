@@ -130,7 +130,6 @@ class ExportBreakpointsDialog(private val myProject: Project,
         myTreeController.setGroupingRules(listOf(XBreakpointGroupingByTypeRule<XBreakpoint<XBreakpointProperties<*>>>()))
         myTreeController.rebuildTree(myBreakpointItems)
         myTreeController.initStartingItems(myBreakpointItems)
-        panel.add(tree)
         expandGroups(tree, tree.rowCount)
 
         myBreakpointsPanelProviders.forEach(Consumer { provider: BreakpointPanelProvider<*> ->
